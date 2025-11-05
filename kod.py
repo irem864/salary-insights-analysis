@@ -4,9 +4,9 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import os
 
-# ==============================
+
 # AYARLAR VE KLASÖR OLUŞTURMA
-# ==============================
+
 plt.rcParams["font.family"] = "DejaVu Sans"
 plt.rcParams["axes.unicode_minus"] = False
 sns.set(style="whitegrid")
@@ -14,9 +14,9 @@ sns.set(style="whitegrid")
 output_dir = "outputs/figures"
 os.makedirs(output_dir, exist_ok=True)
 
-# ==============================
+
 # VERİYİ YÜKLE VE GENEL BAKIŞ
-# ==============================
+
 df = pd.read_csv("Salary_Data.csv")
 
 print("=== Veri İlk 5 Satır ===")
@@ -31,9 +31,9 @@ print(df.isnull().sum(), "\n")
 # Eksik değer varsa temizle
 df.dropna(inplace=True)
 
-# ==============================
+
 # TEMEL İSTATİSTİKSEL ANALİZ
-# ==============================
+
 print("=== Sayısal Özet ===")
 print(df.describe(), "\n")
 
@@ -47,11 +47,11 @@ median_salary = df["Salary"].median()
 print(f"Ortalama Maaş: ${mean_salary:,.0f}")
 print(f"Medyan Maaş: ${median_salary:,.0f}\n")
 
-# ==============================
-# GÖRSEL ANALİZLER
-# ==============================
 
-# 1️⃣ Maaş Dağılımı
+# GÖRSEL ANALİZLER
+
+
+# Maaş Dağılımı
 plt.figure(figsize=(9,5))
 sns.histplot(df["Salary"], bins=30, kde=True, color="skyblue")
 plt.title("Maaş Dağılımı")
@@ -61,7 +61,7 @@ plt.tight_layout()
 plt.savefig(f"{output_dir}/maas_dagilimi.png", dpi=300)
 plt.show()
 
-# 2️⃣ Deneyim ve Maaş İlişkisi
+#  Deneyim ve Maaş İlişkisi
 plt.figure(figsize=(8,6))
 sns.scatterplot(x="Years of Experience", y="Salary", data=df, hue="Education Level", palette="cool")
 plt.title("Deneyim ve Maaş İlişkisi (Eğitim Düzeyine Göre)")
@@ -72,7 +72,7 @@ plt.tight_layout()
 plt.savefig(f"{output_dir}/deneyim_maas_iliskisi.png", dpi=300)
 plt.show()
 
-# 3️⃣ Cinsiyete Göre Maaş
+#  Cinsiyete Göre Maaş
 plt.figure(figsize=(7,5))
 sns.boxplot(x="Gender", y="Salary", data=df, palette="pastel")
 plt.title("Cinsiyete Göre Maaş Dağılımı")
@@ -82,7 +82,7 @@ plt.tight_layout()
 plt.savefig(f"{output_dir}/cinsiyet_maas.png", dpi=300)
 plt.show()
 
-# 4️⃣ Eğitim Düzeyine Göre Ortalama Maaş
+#  Eğitim Düzeyine Göre Ortalama Maaş
 plt.figure(figsize=(9,5))
 edu_salary = df.groupby("Education Level")["Salary"].mean().sort_values(ascending=False)
 sns.barplot(x=edu_salary.index, y=edu_salary.values, palette="Blues_r")
@@ -93,7 +93,7 @@ plt.tight_layout()
 plt.savefig(f"{output_dir}/egitim_maas.png", dpi=300)
 plt.show()
 
-# 5️⃣ En Yüksek Maaşlı 10 Meslek
+#  En Yüksek Maaşlı 10 Meslek
 plt.figure(figsize=(10,6))
 top_jobs = df.groupby("Job Title")["Salary"].mean().sort_values(ascending=False).head(10)
 sns.barplot(x=top_jobs.values, y=top_jobs.index, palette="Greens_r")
@@ -104,7 +104,7 @@ plt.tight_layout()
 plt.savefig(f"{output_dir}/top10_meslek.png", dpi=300)
 plt.show()
 
-# 6️⃣ Yaş ile Maaş Arasındaki İlişki
+#  Yaş ile Maaş Arasındaki İlişki
 plt.figure(figsize=(8,6))
 sns.regplot(x="Age", y="Salary", data=df, color="coral")
 plt.title("Yaş ve Maaş Arasındaki İlişki")
@@ -114,9 +114,9 @@ plt.tight_layout()
 plt.savefig(f"{output_dir}/yas_maas_iliskisi.png", dpi=300)
 plt.show()
 
-# ==============================
+
 # KORELASYON ANALİZİ
-# ==============================
+
 num_cols = ["Age", "Years of Experience", "Salary"]
 corr = df[num_cols].corr()
 
@@ -130,9 +130,9 @@ plt.tight_layout()
 plt.savefig(f"{output_dir}/korelasyon_matrisi.png", dpi=300)
 plt.show()
 
-# ==============================
+
 # İÇGÖRÜLER
-# ==============================
+
 print("=== Analiz Sonuçları ===")
 print(f"- Ortalama maaş: ${mean_salary:,.0f}, medyan maaş: ${median_salary:,.0f}.")
 print("- Maaşlar deneyim ile pozitif yönde ilişkili (korelasyon: "
