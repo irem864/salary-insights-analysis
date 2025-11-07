@@ -83,7 +83,7 @@ Tüm grafikler `outputs/figures/` klasörüne kaydedilir.
 
 ---
 
-## 🗂️ Proje Dosyaları | Project Structure
+##  Proje Dosyaları | Project Structure
 
 Salary Insights – Experience & Education Analysis/
 │
