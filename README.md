@@ -87,14 +87,27 @@ Tüm grafikler `outputs/figures/` klasörüne kaydedilir.
 
 Salary Insights – Experience & Education Analysis/
 │
-├── kod.py
-├── Salary_Data.csv
-├── outputs/
-│ └── figures/
+
+├──
+kod.py
+├──
+Salary_Data.csv
+├── 
+outputs/
+
+│ └──figures/
+
 │ ├── salary_distribution.png
+
 │ ├── experience_salary.png
+
 │ ├── gender_salary.png
+
 │ ├── education_salary.png
+
 │ ├── top_jobs.png
+
 │ ├── age_salary.png
+
 │ └── correlation_matrix.png
+
