@@ -2,15 +2,19 @@
 *İş Deneyimi, Eğitim ve Maaş Analizi Projesi / Job Experience, Education & Salary Analysis Project*
 
 
+## Örnek Grafikler / Sample Visuals
+
+Tüm grafikler `outputs/figures/` klasörüne kaydedilmiştir.
+
 | Grafik | Önizleme |
 |--------|----------|
-| salary_distribution.png | ![salary_distribution](outputs/figures/salary_distribution.png) |
-| experience_salary.png | ![experience_salary](outputs/figures/experience_salary.png) |
-| gender_salary.png | ![gender_salary](outputs/figures/gender_salary.png) |
-| education_salary.png | ![education_salary](outputs/figures/education_salary.png) |
-| top_jobs.png | ![top_jobs](outputs/figures/top_jobs.png) |
-| age_salary.png | ![age_salary](outputs/figures/age_salary.png) |
-| correlation_matrix.png | ![correlation_matrix](outputs/figures/correlation_matrix.png) |
+| maas_dagilimi.png | ![maas_dagilimi](outputs/figures/maas_dagilimi.png) |
+| deneyim_maas_iliskisi.png | ![deneyim_maas_iliskisi](outputs/figures/deneyim_maas_iliskisi.png) |
+| cinsiyet_maas.png | ![cinsiyet_maas](outputs/figures/cinsiyet_maas.png) |
+| egitim_maas.png | ![egitim_maas](outputs/figures/egitim_maas.png) |
+| top10_meslek.png | ![top10_meslek](outputs/figures/top10_meslek.png) |
+| yas_maas_iliskisi.png | ![yas_maas_iliskisi](outputs/figures/yas_maas_iliskisi.png) |
+| korelasyon_matrisi.png | ![korelasyon_matrisi](outputs/figures/korelasyon_matrisi.png) |
 
 ## Proje Hakkında | About the Project
 
