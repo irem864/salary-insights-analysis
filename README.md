@@ -1,7 +1,16 @@
 # Salary Insights – Experience & Education Analysis  
 *İş Deneyimi, Eğitim ve Maaş Analizi Projesi / Job Experience, Education & Salary Analysis Project*
 
----
+
+| Grafik | Önizleme |
+|--------|----------|
+| salary_distribution.png | ![salary_distribution](outputs/figures/salary_distribution.png) |
+| experience_salary.png | ![experience_salary](outputs/figures/experience_salary.png) |
+| gender_salary.png | ![gender_salary](outputs/figures/gender_salary.png) |
+| education_salary.png | ![education_salary](outputs/figures/education_salary.png) |
+| top_jobs.png | ![top_jobs](outputs/figures/top_jobs.png) |
+| age_salary.png | ![age_salary](outputs/figures/age_salary.png) |
+| correlation_matrix.png | ![correlation_matrix](outputs/figures/correlation_matrix.png) |
 
 ## Proje Hakkında | About the Project
 
@@ -60,19 +69,7 @@ Dosya: `Salary_Data.csv`
 
 ---
 
-## Örnek Grafikler | Sample Visuals
 
-Tüm grafikler `outputs/figures/` klasörüne kaydedilir.
-
--  `salary_distribution.png` – Maaş dağılımı  
--  `experience_salary.png` – Deneyim & maaş ilişkisi  
--  `gender_salary.png` – Cinsiyete göre maaş farkı  
--  `education_salary.png` – Eğitim düzeyine göre maaş ortalaması  
--  `top_jobs.png` – En yüksek maaşlı 10 meslek  
--  `age_salary.png` – Yaş ve maaş ilişkisi  
--  `correlation_matrix.png` – Korelasyon matrisi  
-
----
 
 ##  Çıktı & İçgörüler | Key Insights
 
